@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload a New Document</title>
+    <link rel="stylesheet" href="../upload_document_page/upload_page.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload a New Document</h1>
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" id="file-upload" name="file" accept=".csv">
+            <button type="submit">Upload</button>
+        </form>
+        <button style="margin-top: 0.5rem" class="back-button" onclick="window.location.href='/'">Go Back</button>
+
+        <h3 id=ExistingDocs>Existing Documents</h2>
+        <ul id="file-list"></ul>
+    </div>
+    <script src="../upload_document_page/upload_page.js"></script>
+</body>
+</html>

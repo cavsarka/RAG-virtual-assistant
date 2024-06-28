@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenovo Docking Virtual Assistant</title>
+    <link rel="stylesheet" href="home_page/website.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lenovo Sales Virtual Assistant</h1>
+        <form class="form-group" onsubmit="submitQuery(event)">
+            <input type="text" id="query" name="query" placeholder="Enter your question here...">
+            <button type="submit">Submit</button>
+        </form>
+        <button style="margin-top: 0.5rem" class="button newDocButton" onclick="window.location.href='upload_page'">Manage Documents</button>
+        <div id="response"></div>
+        <div id="source"></div>
+    </div>
+    <script src="home_page/website.js"></script>
+</body>
+</html>
