@@ -11,10 +11,11 @@ from langchain_openai import OpenAIEmbeddings
 from langchain.schema import Document
 
 
+
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-
+#Set where to save the Vector Database
 CHROMA_PATH = "chroma"
 DATA_PATH = "./data"
 
@@ -54,7 +55,7 @@ def load_document(path: str):
 
 def calculate_chunk_ids(chunks):
 
-    # This will create IDs like "data/monopoly.pdf:6:2"
+    # This will create IDs like "data/Lenovo_Docks_Data:6:2"
     # Page Source : Page Number : Chunk Index
 
     last_page_id = None
