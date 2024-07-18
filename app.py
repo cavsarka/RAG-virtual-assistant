@@ -86,5 +86,7 @@ def upload_file():
         return jsonify({'error': 'Failed to update the database'}), 500
 
 
+"test"
+
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
