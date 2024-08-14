@@ -9,6 +9,8 @@ import openai
 from dotenv import load_dotenv
 from langchain_openai import OpenAIEmbeddings
 from langchain.schema import Document
+from langchain_community.document_loaders import PyPDFLoader
+
 
 
 
@@ -47,7 +49,9 @@ def load_document(path: str):
     if fileExt == ".csv":
         loader = CSVLoader(path)
         documents = loader.load()
-
+    elif fileExt == ".pdf":
+        loader = PyPDFLoader(path)
+        documents = loader.load()
     
 
     return documents
